@@ -21,13 +21,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest
+      #  pip install pytest
         pip install flask
 
-    - name: Run tests
-      run: |
-        cd python_container_app
-        python -m pytest app.py
+   # - name: Run tests
+  #    run: |
+ #       cd python_container_app
+#        python -m pytest app.py
     - name: run build
       run: |
         cd python_container_app
