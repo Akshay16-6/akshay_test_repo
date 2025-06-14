@@ -8,14 +8,14 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.9]
+        python-version: [3.8 3.9]
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9.22'
+        python-version: ${{ matrix.python-version }}
         cache: 'pip'
     
 
