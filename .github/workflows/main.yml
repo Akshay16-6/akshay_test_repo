@@ -23,12 +23,13 @@ jobs:
         pip install --no-cache-dir --upgrade pip
         cd python_container_app
         pip install -r requirements.txt
+        pip install pytest
 
     - name: Run tests
       run: |
         cd python_container_app
         python -m pytest app.py
-   # - name: run build
-    #  run: |
-     #   cd python_container_app
-      #  python3 app.py
+    - name: run build
+      run: |
+        cd python_container_app
+        python3 app.py
