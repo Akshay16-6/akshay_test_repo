@@ -25,5 +25,9 @@ jobs:
 
     - name: Run tests
       run: |
-        cd src
-        python -m pytest addition.py
+        cd python_container_app
+        python -m pytest app.py
+    - name: run build
+      run: |
+        cd python_container_app
+        python app.py
