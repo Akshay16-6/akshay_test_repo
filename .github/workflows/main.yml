@@ -24,11 +24,11 @@ jobs:
         cd python_container_app
         pip install -r requirements.txt
 
-   # - name: Run tests
-  #    run: |
- #       cd python_container_app
-#        python -m pytest app.py
-    - name: run build
+    - name: Run tests
       run: |
         cd python_container_app
-        python3 app.py
+        python -m pytest app.py
+   # - name: run build
+    #  run: |
+     #   cd python_container_app
+      #  python3 app.py
