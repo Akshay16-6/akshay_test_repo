@@ -27,8 +27,8 @@ jobs:
     - name: Run tests
       run: |
         cd python_container_app
-        python3 -m pytest app.py
+        python -m pytest app.py
     - name: run build
       run: |
         cd python_container_app
-        python3 app.py
+        python app.py
