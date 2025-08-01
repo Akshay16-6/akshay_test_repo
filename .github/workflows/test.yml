@@ -1,5 +1,8 @@
 name: testing cicd
-on: pull_request
+on:
+  push:
+    branches:
+        - test
 jobs:
   create-release:
     runs-on: ubuntu-latest
