@@ -1,0 +1,13 @@
+name: testing cicd
+on:
+  push:
+    branches:
+        - test
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: do nothing
+        run: echo "Do nothing...."
+
+        
