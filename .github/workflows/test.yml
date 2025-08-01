@@ -1,0 +1,11 @@
+name: testing cicd
+on:
+  workflow_dispatch: null
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: do nothing
+        run: echo "Do nothing...."
+
+        
