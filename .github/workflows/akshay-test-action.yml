@@ -1,6 +1,6 @@
 name: akshay-github-action-ci
 
-on: [push]
+#on: [push]
 
 jobs:
   build:
