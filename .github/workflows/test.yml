@@ -1,8 +1,8 @@
 name: testing cicd
-on:
-  push:
-    branches:
-        - test
+#on:
+#  push:
+#   branches:
+#       - test
 jobs:
   create-release:
     runs-on: ubuntu-latest
