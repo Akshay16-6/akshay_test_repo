@@ -1,6 +1,5 @@
 name: testing cicd
-on:
-  workflow_dispatch: null
+on: pull_request
 jobs:
   create-release:
     runs-on: ubuntu-latest
